@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8 ">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width= devide-width, initial-scale=1.0">
+    <title>Personal Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/e092791706.js" crossorigin="anonymous"></script>
+</head>
+<body>
+<div id="header">
+    <div class="container">
+        <nav>
+            <img src="images/logo.png" class="logo">
+            
+            <ul id="sidemenu">
+                <li> <a href="#header">Home</a></li>
+                <li> <a href="#about">About</a></li>
+                <!-- <li> <a href="#services">Services</a></li> -->
+                <li> <a href="#my projects">Projects</a></li>
+                <li> <a href="#contact">Contact</a></li>
+                <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+            </ul>
+            <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+        </nav>
+        <div class="header-text">
+            <p>AI and Data Science Enthusiast</p>
+            <h1> Hi, I'm <span>Gurleen Kaur Baxi</span> <br> From India</h1>
+        </div>
+    </div>
+</div>
+
+<! ----------ABOUT---------- >
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="images/user.png">
+            </div>
+            <div class="about-col-2">
+                <h1 class= "sub-title"> About Me</h1>
+                <br>
+                <p> A programmer with an ardent passion for Machine Learning and Data Science. To develop my talents & knowledge and learn more about my subject of study, I continue to fervently learn about relevant topics while actively working and learning in the field of AI-ML; Data Science and its derivatives. As Vice School Captain, I've showcased exceptional organizational skills and teamwork. I'm also passionate about community engagement, actively volunteering and contributing to social causes. 
+                </p>
+
+                <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                    <p class="tab-links" onclick="opentab('leadership_pos')">Leadership Positions</p>
+                    <p class="tab-links" onclick="opentab('certifications')">Certifications</p>                    
+                    <p class="tab-links" onclick="opentab('education')">Education</p>                   
+                </div>
+                <div class="tab-contents active-tab" id="skills">
+                    <ul>
+                        <li><span>Web Development</span><br>Building web applications</li>
+                        <li><span>Data Analytics</span><br>Building Data Analytics Pipelines and Dashboards</li>
+                        <li><span>Artificial Intelligence and Machine Learning</span><br></li>
+                        <li><span>Event Co-ordination and Organization</span><br>Anchored various school events and interviewed notable personalities</li>
+                        <li><span>Teamwork and Collaboration</span><br>Active participation in clubs, and group projects</li>
+                        <li><span>Community Engagement and Volunteerism</span><br>Engaged in volunteer work, and contributed to social causes</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="leadership_pos">
+                    <ul>
+                        <li><span>Vice School Captain, Senior Secondary</span><br>(2021-22)</li>
+                        <li><span>Class Representative</span><br>(2013-20)</li>
+                        <li><span>Prefect</span><br>(2014-16, 2019)</li>
+                        <li><span>Junior Activity Captain, High School</span><br>(2013-14)</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="certifications">
+                    <ul>
+                        <li><span>Specialization: Python for Everybody, Oct '23</span><br>University of Michigan <a href="https://www.coursera.org/account/accomplishments/specialization/3VFDR57D64QY">(Certificate Link)</a></li>
+                        <li><span>Course: Introduction to AI, Oct '23</span><br>IBM <a href="https://www.coursera.org/account/accomplishments/verify/2CYBFZ6ZEMTL">(Certificate Link)</a></li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="education">
+                    <ul>
+                        <li><span>Undergraduate Student, Computer Science (Specializing in AI and ML)</span><br>Chitkara University, Punjab</li>
+                        <li><span>Senior Secondary (Biology, Chemistry, Physics, Mathematics, Computer Science)</span><br>Modern Senior Secondary School, Patiala</li>
+                        <li><span>High School</span><br>Modern Senior Secondary School, Patiala</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="about-col-2"></div>
+
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- <! ------services--------- >
+<div id="services">
+    <div class="container">
+        <h1 class="sub-title">What I'm doing</h1>
+        <div class="services-list">
+            <div>
+                <i class="fa-solid fa-code"></i>
+                <h2>Web Design</h2>
+                <p>description of the service</p>
+                <a href="#">Learn more</a>
+            </div>
+            <div>
+                <i class="fa-solid fa-crop-simple"></i>
+                <h2>UI Design</h2>
+                <p>description of the service</p>
+                <a href="#">Learn more</a>
+            </div>
+            <div>
+                <i class="fa-brands fa-app-store"></i>
+                <h2>App Design</h2>
+                <p>description of the service</p>
+                <a href="#">Learn more</a>
+            </div>
+        </div>
+    </div>
+</div> -->
+<! ---------My Projects-------- >
+<div id="my projects">
+    <div class="container">
+        <h1 class="sub-title">Projects</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="images/work-1.jpg">
+                <div class="layer">
+                    <h3>Azure Insights: Modernizing Sales Data Infrastructure</h3>
+                    <p>Modernising the data infrastructure using Azure Cloud tools (Azure Data Factory, Databricks, Synapse Analytics) for creating a data pipeline and real-time dashboard on Streamlit with Python</p>
+                    <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/work-2.png">
+                <div class="layer">
+                    <h3>Project-2</h3>
+                    <p>description of the Project</p>
+                    <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/work-3.png">
+                <div class="layer">
+                    <h3>Project-3></h3>
+                    <p>description of the Project</p>
+                    <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                </div>
+            </div>
+        </div>
+        <!-- <a href="#" class="btn">See More</a> -->
+    </div>
+</div>
+<! ----------CONTACT---------- >
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p><i class="fa-solid fa-paper-plane"></i>gurleenkaurbaxi@gmail.com</p>
+                <p><i class="fa-solid fa-paper-plane"></i>gurleen3825.beai23@chitkara.edu.in</p>
+                <p><i class="fa-sharp fa-solid fa-phone"></i>+91-7888668183</p>
+                <div class="social-icons">
+                    <a href="https://www.linkedin.com/in/gurleenkaurbaxi/"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="https://github.com/gurleenkaurbaxi"><i class="fa-brands fa-github"></i></a>
+                    <a href="https://discordapp.com/users/1045056417146617917"><i class="fa-brands fa-discord"></i></a>
+                    <a href="https://instagram.com/gurleen.kaur.baxi?igshid=MmVlMjlkMTBhMg=="><i class="fa-brands fa-instagram"></i></a>
+                </div>
+                <a href="https://drive.google.com/file/d/1n7SAV3ulUMkaaeGIFFRuY8P_2VtWoAlv/view?usp=sharing" class="btn btn2">CV</a>
+            </div>
+            <div class="contact-right">
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="Enter your name" required>
+                    <input type="email" name="Email" placeholder="Enter your email" required>
+                    <textarea name="Message" rows="6" placeholder="Enter your message"></textarea>
+                    <button type="submit" class="btn btn2">Send</button>
+                </form>
+                <span id="msg"></span>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>Copyright © Gurleen Kaur Baxi</p>
+    </div>
+</div>
+
+<script>
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab")
+    }
+
+</script>
+
+<script>
+    var sidemenu = document.getElementById("sidemenu")
+    function openmenu(){
+        sidemenu.style.right = "0";
+    }
+    function closemenu(){
+        sidemenu.style.right = "-200px";
+    }
+</script>
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbzXhrF9uPrMqdmMBzmfH_hbJjUlG3CRILkXjrpLiiQLVPsrXVsjQp1tiS-ReoQbEg/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const msg= document.getElementById("msg")
+  
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+            msg.innerHTML= "Thank You for taking time out to visit my profile and for the message. Will reply back to you soon. Good Day!!!"
+            setTimeout(function(){
+                msg.innerHTML = "" 
+            }, 7000) 
+            form.reset()       
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+
+</body>
+</html>
